@@ -24,7 +24,7 @@
     <tr><td>Kênh đã đăng ký</td><td>Khi bạn bấm Đăng ký</td><td>Bỏ đăng ký là xóa.</td></tr>
     <tr><td>Lịch sử xem (tối đa 200 video)</td><td>Khi công tắc "Lịch sử xem" bật (bật sẵn)</td><td>Tắt công tắc là ngừng lưu và xóa toàn bộ.</td></tr>
     <tr><td>Lịch sử tìm kiếm (tối đa 20 từ khóa)</td><td>Khi công tắc "Lịch sử tìm kiếm" bật (bật sẵn)</td><td>Tắt công tắc là ngừng lưu và xóa toàn bộ.</td></tr>
-    <tr><td>Mật khẩu khóa app</td><td>Khi bạn bật "Khóa ứng dụng bằng mật khẩu"</td><td>Chỉ lưu mã băm (PBKDF2, có salt), không lưu mật khẩu gốc. Tắt khóa là xóa.</td></tr>
+    <tr><td>Mã PIN khóa app</td><td>Khi bạn bật "Khóa ứng dụng bằng mã PIN"</td><td>Chỉ lưu mã băm (PBKDF2, có salt) và độ dài mã, không lưu mã gốc. Tắt khóa là xóa.</td></tr>
     <tr><td>Kênh không đề xuất</td><td>Khi bạn chọn "Không đề xuất kênh này"</td><td>Bỏ chặn trong tab Bạn là xóa.</td></tr>
   </table>
   <p>Dữ liệu này nằm trong bộ nhớ riêng của app, không đồng bộ lên đám mây. Gỡ cài đặt AZ Tube sẽ xóa tất cả.</p>
@@ -32,11 +32,13 @@
   <h2>Kết nối mạng</h2>
   <p>Để hiển thị và phát video, AZ Tube kết nối trực tiếp tới máy chủ của YouTube (youtube.com, googlevideo.com, ảnh thu nhỏ ytimg.com), giống như khi bạn mở YouTube trên trình duyệt mà không đăng nhập. Vì vậy YouTube/Google có thể thấy địa chỉ IP của bạn và nội dung bạn yêu cầu, theo <a href="https://policies.google.com/privacy" rel="noopener">chính sách của Google</a>. AZ Tube không gửi kèm tài khoản, không gửi lịch sử xem, và không gọi tới hệ thống quảng cáo hay thống kê nào.</p>
   <p>Khi "Đề xuất" đang bật (mặc định), từ khóa bạn đang gõ sẽ được gửi tới YouTube để lấy gợi ý tìm kiếm. Tắt "Đề xuất" trong tab Bạn nếu không muốn.</p>
+  <p><b>Kiểm tra bản mới:</b> khi "Tự kiểm tra bản mới" đang bật (mặc định), mỗi lần mở app (tối đa 2 lần mỗi ngày) AZ Tube hỏi GitHub (api.github.com) xem có bản phát hành mới không. Khi bạn bấm Cập nhật, file cài được tải từ GitHub. Yêu cầu này không kèm thông tin gì về bạn ngoài địa chỉ IP và số phiên bản app, theo <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">chính sách của GitHub</a>. Tắt trong tab Bạn → Cập nhật nếu không muốn.</p>
 
   <h2>Quyền ứng dụng</h2>
   <table>
     <tr><th>Quyền</th><th>Dùng để</th></tr>
     <tr><td>Internet</td><td>Tải danh sách video và phát video.</td></tr>
+    <tr><td>Cài ứng dụng (REQUEST_INSTALL_PACKAGES)</td><td>Chỉ để cài bản mới của chính AZ Tube khi bạn bấm Cập nhật. Android luôn hỏi bạn xác nhận.</td></tr>
     <tr><td>Xem trạng thái mạng</td><td>Biết khi nào có mạng lại để phát tiếp bài đang dở.</td></tr>
     <tr><td>Thông báo</td><td>Hiện nút điều khiển trình phát trên thanh thông báo và màn hình khóa.</td></tr>
     <tr><td>Dịch vụ nền (phát media), giữ máy thức</td><td>Phát tiếp âm thanh khi tắt màn hình hoặc chuyển app.</td></tr>

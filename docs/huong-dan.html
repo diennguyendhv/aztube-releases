@@ -14,7 +14,7 @@
 <main class="doc">
 <div class="wrap">
   <h1>Hướng dẫn</h1>
-  <p class="updated">Cài đặt và sử dụng AZ Tube 1.2 trên Android.</p>
+  <p class="updated">Cài đặt và sử dụng AZ Tube 1.3 trên Android.</p>
 
   <div class="toc"><b>Nội dung</b>
     <ul>
@@ -23,7 +23,7 @@
       <li><a href="#phat-nen">Phát nền, chỉ nghe, cửa sổ nổi</a></li>
       <li><a href="#kenh">Đăng ký kênh, hàng chờ, chặn kênh</a></li>
       <li><a href="#cai-dat-app">Cài đặt trong app</a></li>
-      <li><a href="#khoa-app">Khóa app bằng mật khẩu</a></li>
+      <li><a href="#khoa-app">Khóa app bằng mã PIN</a></li>
       <li><a href="#cap-nhat">Cập nhật và gỡ cài đặt</a></li>
     </ul>
   </div>
@@ -31,7 +31,7 @@
   <h2 id="cai-dat">1. Cài đặt từ file APK</h2>
   <ol class="steps">
     <li><b>Tải file.</b> Mở trang <a href="./">diennguyendhv.github.io/aztube-releases</a> bằng trình duyệt trên điện thoại (Chrome, Cốc Cốc…), bấm <b>⬇ Tải về</b>. Nếu trình duyệt hỏi "File này có thể gây hại", chọn <b>Vẫn tải xuống</b>.</li>
-    <li><b>Mở file.</b> Khi tải xong, bấm <b>Mở</b> trên thông báo, hoặc vào ứng dụng <b>Tệp / Files → Tải xuống</b> và chạm vào <code>AZTube-1.2.apk</code>.</li>
+    <li><b>Mở file.</b> Khi tải xong, bấm <b>Mở</b> trên thông báo, hoặc vào ứng dụng <b>Tệp / Files → Tải xuống</b> và chạm vào <code>AZTube-1.3.apk</code>.</li>
     <li><b>Cho phép cài từ nguồn này.</b> Lần đầu, Android hiện "Vì lý do bảo mật, điện thoại không được phép cài ứng dụng không rõ nguồn gốc". Bấm <b>Cài đặt</b> → bật <b>Cho phép từ nguồn này</b> → quay lại.</li>
     <li><b>Cài đặt.</b> Bấm <b>Cài đặt</b>. Nếu <b>Google Play Protect</b> cảnh báo, chọn <b>Chi tiết thêm → Vẫn cài đặt</b>. Nếu được hỏi có gửi ứng dụng để quét không, chọn tùy ý.</li>
     <li><b>Mở AZ Tube.</b> Lần đầu, app có thể xin quyền <b>gửi thông báo</b>: hãy cho phép để có nút điều khiển nhạc trên thanh thông báo và màn hình khóa.</li>
@@ -73,22 +73,27 @@
     <tr><td>Tự động phát</td><td>Bật</td><td>Hết hàng chờ thì phát tiếp video cùng kênh. Cũng bật/tắt được ngay dưới video.</td></tr>
     <tr><td>Lịch sử xem</td><td>Bật</td><td>Lưu video đã xem. Tắt sẽ xóa lịch sử đã lưu.</td></tr>
     <tr><td>Lịch sử tìm kiếm</td><td>Bật</td><td>Lưu từ khóa đã tìm. Tắt sẽ xóa lịch sử đã lưu.</td></tr>
-    <tr><td>Khóa ứng dụng bằng mật khẩu</td><td>Tắt</td><td>Hỏi mật khẩu mỗi khi mở hoặc quay lại AZ Tube.</td></tr>
+    <tr><td>Khóa ứng dụng bằng mã PIN</td><td>Tắt</td><td>Hỏi mã PIN mỗi khi mở hoặc quay lại AZ Tube.</td></tr>
+    <tr><td>Tự kiểm tra bản mới</td><td>Bật</td><td>Khi mở app, hỏi GitHub xem có bản mới không (tối đa 2 lần mỗi ngày).</td></tr>
   </table>
 
-  <h2 id="khoa-app">6. Khóa app bằng mật khẩu</h2>
+  <h2 id="khoa-app">6. Khóa app bằng mã PIN</h2>
   <ul>
-    <li><b>Bật:</b> tab <b>Bạn</b> → bật <b>Khóa ứng dụng bằng mật khẩu</b> → nhập mật khẩu (ít nhất 4 ký tự) hai lần.</li>
-    <li>App hỏi mật khẩu khi mở, khi quay lại từ màn hình chính hoặc app khác, khi mở lại từ cửa sổ nổi. Xoay màn hình hay bấm Chia sẻ không bị khóa.</li>
+    <li><b>Bật:</b> tab <b>Bạn</b> → bật <b>Khóa ứng dụng bằng mã PIN</b> → bấm mã 4 đến 8 số trên bàn phím số, bấm ✓, rồi bấm lại mã một lần nữa.</li>
+    <li><b>Mở khóa:</b> bấm đủ các số của mã là app tự mở, không cần bấm thêm nút.</li>
+    <li>App hỏi mã khi mở, khi quay lại từ màn hình chính hoặc app khác, khi mở lại từ cửa sổ nổi. Xoay màn hình hay bấm Chia sẻ không bị khóa.</li>
     <li>Nhạc đang phát nền vẫn chạy khi app bị khóa. Ảnh xem trước trong màn hình đa nhiệm được che đi (Android 13 trở lên).</li>
     <li>Nhập sai 5 lần thì phải chờ 30 giây, sai tiếp thì thời gian chờ tăng dần (tối đa 15 phút).</li>
-    <li><b>Quên mật khẩu:</b> bấm <b>Quên mật khẩu?</b>, xác nhận bằng mã PIN, hình vẽ hoặc vân tay của điện thoại. Khóa app được tắt, dữ liệu giữ nguyên. Máy không đặt khóa màn hình thì phải gỡ app rồi cài lại.</li>
-    <li><b>Đổi hoặc tắt:</b> tab <b>Bạn</b> → <b>Đổi mật khẩu</b>, hoặc gạt tắt công tắc (cần nhập mật khẩu hiện tại).</li>
+    <li><b>Quên mã PIN:</b> bấm <b>Quên mã PIN?</b>, xác nhận bằng mã PIN, hình vẽ hoặc vân tay của điện thoại. Khóa app được tắt, dữ liệu giữ nguyên. Máy không đặt khóa màn hình thì phải gỡ app rồi cài lại.</li>
+    <li><b>Đổi hoặc tắt:</b> tab <b>Bạn</b> → <b>Đổi mã PIN</b>, hoặc gạt tắt công tắc (cần nhập mã hiện tại).</li>
+    <li>Đã đặt mật khẩu chữ ở bản 1.2: vẫn mở bằng mật khẩu cũ. Vào <b>Đổi mã PIN</b> để chuyển sang mã số.</li>
   </ul>
 
   <h2 id="cap-nhat">7. Cập nhật và gỡ cài đặt</h2>
   <ul>
-    <li><b>Cập nhật:</b> tải file APK mới ở trang <a href="phien-ban.html">Phiên bản</a> rồi cài đè. Kênh đăng ký và cài đặt được giữ nguyên.</li>
+    <li><b>Cập nhật trong app (từ bản 1.3):</b> khi có bản mới, app hiện thông báo "Có bản mới". Bấm <b>Cập nhật</b>, chờ tải xong, rồi bấm <b>Cập nhật</b> trên màn hình của Android. App tự đóng sau khi cài, mở lại là dùng bản mới. Lần đầu, Android có thể hỏi cho phép AZ Tube cài ứng dụng: bật <b>Cho phép từ nguồn này</b> rồi quay lại.</li>
+    <li>Kiểm tra bằng tay: tab <b>Bạn → Cập nhật → Kiểm tra bản mới</b>.</li>
+    <li><b>Bản 1.2 trở về trước:</b> tải file APK mới ở trang <a href="phien-ban.html">Phiên bản</a> rồi cài đè. Kênh đăng ký và cài đặt được giữ nguyên.</li>
     <li><b>Gỡ cài đặt:</b> nhấn giữ biểu tượng AZ Tube → <b>Gỡ cài đặt</b>. Mọi dữ liệu của app (kênh, lịch sử, kênh đã chặn, cài đặt) bị xóa theo.</li>
   </ul>
 </div>
