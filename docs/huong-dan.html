@@ -14,7 +14,7 @@
 <main class="doc">
 <div class="wrap">
   <h1>Hướng dẫn</h1>
-  <p class="updated">Cài đặt và sử dụng AZ Tube 1.1 trên Android.</p>
+  <p class="updated">Cài đặt và sử dụng AZ Tube 1.2 trên Android.</p>
 
   <div class="toc"><b>Nội dung</b>
     <ul>
@@ -23,6 +23,7 @@
       <li><a href="#phat-nen">Phát nền, chỉ nghe, cửa sổ nổi</a></li>
       <li><a href="#kenh">Đăng ký kênh, hàng chờ, chặn kênh</a></li>
       <li><a href="#cai-dat-app">Cài đặt trong app</a></li>
+      <li><a href="#khoa-app">Khóa app bằng mật khẩu</a></li>
       <li><a href="#cap-nhat">Cập nhật và gỡ cài đặt</a></li>
     </ul>
   </div>
@@ -30,7 +31,7 @@
   <h2 id="cai-dat">1. Cài đặt từ file APK</h2>
   <ol class="steps">
     <li><b>Tải file.</b> Mở trang <a href="./">diennguyendhv.github.io/aztube-releases</a> bằng trình duyệt trên điện thoại (Chrome, Cốc Cốc…), bấm <b>⬇ Tải về</b>. Nếu trình duyệt hỏi "File này có thể gây hại", chọn <b>Vẫn tải xuống</b>.</li>
-    <li><b>Mở file.</b> Khi tải xong, bấm <b>Mở</b> trên thông báo, hoặc vào ứng dụng <b>Tệp / Files → Tải xuống</b> và chạm vào <code>AZTube-1.1.apk</code>.</li>
+    <li><b>Mở file.</b> Khi tải xong, bấm <b>Mở</b> trên thông báo, hoặc vào ứng dụng <b>Tệp / Files → Tải xuống</b> và chạm vào <code>AZTube-1.2.apk</code>.</li>
     <li><b>Cho phép cài từ nguồn này.</b> Lần đầu, Android hiện "Vì lý do bảo mật, điện thoại không được phép cài ứng dụng không rõ nguồn gốc". Bấm <b>Cài đặt</b> → bật <b>Cho phép từ nguồn này</b> → quay lại.</li>
     <li><b>Cài đặt.</b> Bấm <b>Cài đặt</b>. Nếu <b>Google Play Protect</b> cảnh báo, chọn <b>Chi tiết thêm → Vẫn cài đặt</b>. Nếu được hỏi có gửi ứng dụng để quét không, chọn tùy ý.</li>
     <li><b>Mở AZ Tube.</b> Lần đầu, app có thể xin quyền <b>gửi thông báo</b>: hãy cho phép để có nút điều khiển nhạc trên thanh thông báo và màn hình khóa.</li>
@@ -43,6 +44,7 @@
     <li>Từ app YouTube hoặc trình duyệt: <b>Chia sẻ → AZ Tube</b> để mở video đó trong AZ Tube.</li>
     <li>Trong trình phát: chạm để hiện nút, <b>chạm đúp bên trái/phải để tua lùi/tới 10 giây</b>, vuốt xuống để thu nhỏ, xoay ngang để xem toàn màn hình.</li>
     <li>Bánh răng ⚙ trên trình phát: chọn <b>Chất lượng</b>, <b>Tốc độ phát</b>, <b>Chỉ âm thanh</b>.</li>
+    <li>Dưới video là danh sách <b>Video cùng kênh</b>. Công tắc <b>Tự động phát</b> bên cạnh quyết định có phát tiếp video cùng kênh khi hết hàng chờ hay không.</li>
   </ul>
 
   <h2 id="phat-nen">3. Phát nền, chỉ nghe, cửa sổ nổi</h2>
@@ -57,23 +59,34 @@
   <h2 id="kenh">4. Đăng ký kênh, hàng chờ, chặn kênh</h2>
   <ul>
     <li>Bấm <b>Đăng ký</b> trên trang video hoặc trang kênh. Không cần tài khoản: danh sách kênh lưu trên điện thoại.</li>
-    <li>Khi tắt "Đề xuất", trang chủ chỉ hiện video mới nhất của các kênh bạn đăng ký. Khi bật, có thêm tab <b>Kênh đăng ký</b> riêng.</li>
+    <li>Khi tắt "Đề xuất", trang chủ chỉ hiện video mới nhất của các kênh bạn đăng ký (trang xem video vẫn có video cùng kênh). Khi bật, có thêm tab <b>Kênh đăng ký</b> riêng.</li>
     <li>Bấm ⋮ bên cạnh một video để <b>Phát tiếp theo</b> hoặc <b>Thêm vào cuối hàng chờ</b>. Mở danh sách phát và bấm <b>Phát tất cả</b> để nghe cả danh sách.</li>
     <li>Không muốn thấy một kênh nữa: bấm ⋮ → <b>Không đề xuất kênh này</b>. Video của kênh bị ẩn ở mọi nơi. Bỏ chặn trong tab <b>Bạn</b> → <b>Kênh không đề xuất</b>.</li>
   </ul>
 
-  <h2 id="cai-dat-app">5. Cài đặt trong app (tab Bạn → Cài đặt)</h2>
+  <h2 id="cai-dat-app">5. Cài đặt trong app (tab Bạn)</h2>
   <table>
     <tr><th>Tùy chọn</th><th>Mặc định</th><th>Ý nghĩa</th></tr>
     <tr><td>Chất lượng video tối đa</td><td>720p</td><td>Giới hạn độ phân giải (144p–1080p). Chọn thấp để tiết kiệm 4G.</td></tr>
-    <tr><td>Đề xuất</td><td>Bật</td><td>Trang chủ theo chủ đề, gợi ý khi tìm kiếm, video liên quan (chỉ từ kênh đang xem).</td></tr>
+    <tr><td>Đề xuất</td><td>Bật</td><td>Trang chủ theo chủ đề và gợi ý khi tìm kiếm. Tắt thì trang chủ chỉ có video từ kênh đã đăng ký.</td></tr>
     <tr><td>Chỉ nghe âm thanh</td><td>Tắt</td><td>Không tải hình, tiết kiệm pin và dữ liệu.</td></tr>
-    <tr><td>Tự động phát</td><td>Bật</td><td>Hết hàng chờ thì phát tiếp video liên quan (chỉ có tác dụng khi bật Đề xuất).</td></tr>
+    <tr><td>Tự động phát</td><td>Bật</td><td>Hết hàng chờ thì phát tiếp video cùng kênh. Cũng bật/tắt được ngay dưới video.</td></tr>
     <tr><td>Lịch sử xem</td><td>Bật</td><td>Lưu video đã xem. Tắt sẽ xóa lịch sử đã lưu.</td></tr>
     <tr><td>Lịch sử tìm kiếm</td><td>Bật</td><td>Lưu từ khóa đã tìm. Tắt sẽ xóa lịch sử đã lưu.</td></tr>
+    <tr><td>Khóa ứng dụng bằng mật khẩu</td><td>Tắt</td><td>Hỏi mật khẩu mỗi khi mở hoặc quay lại AZ Tube.</td></tr>
   </table>
 
-  <h2 id="cap-nhat">6. Cập nhật và gỡ cài đặt</h2>
+  <h2 id="khoa-app">6. Khóa app bằng mật khẩu</h2>
+  <ul>
+    <li><b>Bật:</b> tab <b>Bạn</b> → bật <b>Khóa ứng dụng bằng mật khẩu</b> → nhập mật khẩu (ít nhất 4 ký tự) hai lần.</li>
+    <li>App hỏi mật khẩu khi mở, khi quay lại từ màn hình chính hoặc app khác, khi mở lại từ cửa sổ nổi. Xoay màn hình hay bấm Chia sẻ không bị khóa.</li>
+    <li>Nhạc đang phát nền vẫn chạy khi app bị khóa. Ảnh xem trước trong màn hình đa nhiệm được che đi (Android 13 trở lên).</li>
+    <li>Nhập sai 5 lần thì phải chờ 30 giây, sai tiếp thì thời gian chờ tăng dần (tối đa 15 phút).</li>
+    <li><b>Quên mật khẩu:</b> bấm <b>Quên mật khẩu?</b>, xác nhận bằng mã PIN, hình vẽ hoặc vân tay của điện thoại. Khóa app được tắt, dữ liệu giữ nguyên. Máy không đặt khóa màn hình thì phải gỡ app rồi cài lại.</li>
+    <li><b>Đổi hoặc tắt:</b> tab <b>Bạn</b> → <b>Đổi mật khẩu</b>, hoặc gạt tắt công tắc (cần nhập mật khẩu hiện tại).</li>
+  </ul>
+
+  <h2 id="cap-nhat">7. Cập nhật và gỡ cài đặt</h2>
   <ul>
     <li><b>Cập nhật:</b> tải file APK mới ở trang <a href="phien-ban.html">Phiên bản</a> rồi cài đè. Kênh đăng ký và cài đặt được giữ nguyên.</li>
     <li><b>Gỡ cài đặt:</b> nhấn giữ biểu tượng AZ Tube → <b>Gỡ cài đặt</b>. Mọi dữ liệu của app (kênh, lịch sử, kênh đã chặn, cài đặt) bị xóa theo.</li>
