@@ -58,6 +58,7 @@ var RELEASES = "https://github.com/diennguyendhv/aztube-releases/releases";
     '<a href="dieu-khoan.html">Điều khoản</a>' +
     '<a href="' + RELEASES + '" rel="noopener">GitHub Releases</a>' +
     '<a href="https://github.com/diennguyendhv/AZ-Tube" rel="noopener">Mã nguồn (GPL-3.0)</a>' +
+    '<a href="giay-phep.html">Giấy phép</a>' +
     '<a href="mailto:diennguyendhv@gmail.com">Liên hệ</a>' +
     "</nav></div>";
   document.body.appendChild(footer);
